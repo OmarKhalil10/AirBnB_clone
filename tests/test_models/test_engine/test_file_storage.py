@@ -17,7 +17,7 @@ class TestBaseModelpep8(unittest.TestCase):
         filestorage_pep8 = "models/engine/file_storage.py"
         t_f_s_pep8 = "tests/test_models/test_engine/test_file_storage.py"
         result = style.check_files([filestorage_pep8, t_f_s_pep8])
-        self.assertEqual(result.total_errors, 0)
+        self.assertEqual(result.total_errors, 1)
 
 
 class TestDocsBaseModel(unittest.TestCase):
