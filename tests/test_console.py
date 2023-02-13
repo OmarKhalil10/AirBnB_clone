@@ -62,27 +62,27 @@ class Test_Console_help(unittest.TestCase):
         help = "Quit command to exit the program."
         with patch("sys.stdout", new=StringIO()) as f:
             self.assertFalse(HBNBCommand().onecmd("help quit"))
-            #self.assertEqual(help, f.getvalue().strip())
+            self.assertEqual(help, f.getvalue().strip())
 
     def test_help_EOF(self):
         help = "End Of File command to exit the program"
         with patch("sys.stdout", new=StringIO()) as f:
             self.assertFalse(HBNBCommand().onecmd("help EOF"))
-            #self.assertEqual(help, f.getvalue().strip())
+            self.assertEqual(help, f.getvalue().strip())
 
     def test_help_create(self):
         help = ("Creates a new instance of BaseModel "
                 "saves it (to the JSON file) and prints the id.")
         with patch("sys.stdout", new=StringIO()) as f:
             self.assertFalse(HBNBCommand().onecmd("help create"))
-            #self.assertEqual(help, f.getvalue().strip())
+            self.assertEqual(help, f.getvalue().strip())
 
     def test_help_all(self):
         help = ("Prints all string representation of all instances\n        "
                 "based or not on the class name.")
         with patch("sys.stdout", new=StringIO()) as f:
             self.assertFalse(HBNBCommand().onecmd("help all"))
-            #self.assertEqual(help, f.getvalue().strip())
+            self.assertEqual(help, f.getvalue().strip())
 
     def test_help_show(self):
         help = ("Prints the string representation of an instance,"
@@ -90,19 +90,19 @@ class Test_Console_help(unittest.TestCase):
                 "show <class name> <id>.")
         with patch("sys.stdout", new=StringIO()) as f:
             self.assertFalse(HBNBCommand().onecmd("help show"))
-            #self.assertEqual(help, f.getvalue().strip())
+            self.assertEqual(help, f.getvalue().strip())
 
     def test_help_destroy(self):
         help = ("Deletes an instance based on the class name and id.")
         with patch("sys.stdout", new=StringIO()) as f:
             self.assertFalse(HBNBCommand().onecmd("help destroy"))
-            #self.assertEqual(help, f.getvalue().strip())
+            self.assertEqual(help, f.getvalue().strip())
 
     def test_help_count(self):
         help = ("counts the number of instances of a class")
         with patch("sys.stdout", new=StringIO()) as f:
             self.assertFalse(HBNBCommand().onecmd("help count"))
-            #self.assertEqual(help, f.getvalue().strip())
+            self.assertEqual(help, f.getvalue().strip())
 
     def test_help_update(self):
         help = ("Updates an instance based on the class"
@@ -110,7 +110,7 @@ class Test_Console_help(unittest.TestCase):
                 "updating attribute (save the change into the JSON file).")
         with patch("sys.stdout", new=StringIO()) as f:
             self.assertFalse(HBNBCommand().onecmd("help update"))
-            #self.assertEqual(help, f.getvalue().strip())
+            self.assertEqual(help, f.getvalue().strip())
 
     def test_help(self):
         help = ("Documented commands (type help <topic>):\n"
@@ -118,7 +118,7 @@ class Test_Console_help(unittest.TestCase):
                 "EOF  all  count  create  destroy  help  quit  show  update")
         with patch("sys.stdout", new=StringIO()) as f:
             self.assertFalse(HBNBCommand().onecmd("help"))
-            #self.assertEqual(help, f.getvalue().strip())
+            self.assertEqual(help, f.getvalue().strip())
 
     def test_cmd(self):
         with patch("sys.stdout", new=StringIO()) as f:
@@ -128,12 +128,12 @@ class Test_Console_help(unittest.TestCase):
     def test_get_class(self):
         with patch("sys.stdout", new=StringIO()) as f:
             self.assertFalse(HBNBCommand().onecmd("all"))
-            #self.assertEqual("", f.getvalue().strip())
+            self.assertEqual("", f.getvalue().strip())
 
     def test_get_class_wrong(self):
         with patch("sys.stdout", new=StringIO()) as f:
             self.assertFalse(HBNBCommand().onecmd("all "))
-            #self.assertEqual("", f.getvalue().strip())
+            self.assertEqual("", f.getvalue().strip())
 
 ###############################################################################
 # commands
