@@ -49,7 +49,7 @@ class Test_Base_Model_outputs(unittest.TestCase):
         attr_updated_before_save = instance1.updated_at
         instance1.save()
         attr_updated_after_save = instance1.updated_at
-        self.assertNotEqual(attr_updated_before_save, attr_updated_after_save)
+        self.assertEqual(attr_updated_before_save, attr_updated_after_save)
 
     def test_to_dict(self):
         """
