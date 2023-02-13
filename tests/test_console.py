@@ -12,7 +12,8 @@ Unittest classes:
     Test_console_update
     Test_console_count
     """
-
+import sys
+sys.path.append("../")
 from console import HBNBCommand
 import unittest
 from io import StringIO
