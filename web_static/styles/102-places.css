@@ -134,6 +134,49 @@ article>h2 {
     margin-top: 0px;
 }
 
+
+@media only screen and (max-width: 1030px) 
+{
+    .places h1 {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 410px) 
+{
+    .information {
+
+        margin-top: 2%;
+    }
+}
+@media only screen and (max-width: 381px) 
+{
+    .information {
+      height: 20%;
+      padding-top: 5%;
+    }
+    .price_by_night {
+        position: static;
+        width: 20%;
+        min-width: 65px;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 5% auto;
+
+    }
+}
+@media only screen and (max-width: 281px) 
+{
+    .information {
+      height: 23%;
+    }
+    .reviews {
+        margin-bottom: 100%;
+    }
+}
+
+
+
+
 /*
 justify-content
 align-items

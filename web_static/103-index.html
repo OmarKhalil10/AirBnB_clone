@@ -4,22 +4,22 @@
 <head>
     <meta charset="utf-8">
     <title>AirBnB clone</title>
-    <link rel="stylesheet" type="text/css" href="styles/4-common.css" />
-    <link rel="stylesheet" type="text/css" href="styles/3-header.css" />
-    <link rel="stylesheet" type="text/css" href="styles/3-footer.css" />
-    <link rel="stylesheet" type="text/css" href="styles/6-filters.css" />
-    <link rel="stylesheet" type="text/css" href="styles/100-places.css" />
+    <link rel="stylesheet" type="text/css" href="styles/103-common.css" />
+    <link rel="stylesheet" type="text/css" href="styles/103-header.css" />
+    <link rel="stylesheet" type="text/css" href="styles/103-footer.css" />
+    <link rel="stylesheet" type="text/css" href="styles/103-filters.css" />
+    <link rel="stylesheet" type="text/css" href="styles/103-places.css" />
     <link rel='shortcut icon' href="../images/icon.png" />
 </head>
 
 <body>
-    <header> </header>
+    <header title="Logo"> </header>
     <div class="container">
-        <section class="filters">
-            <button>
+        <section class="filters" title="Search Bar">
+            <button title="search button">
                 Search
             </button>
-            <div class="locations">
+            <div class="locations" role="menu">
                 <h3>
                     States
                 </h3>
@@ -48,7 +48,7 @@
                 </ul>
 
             </div>
-            <div class="amenities">
+            <div class="amenities" role="menu">
                 <h3>
                     Amenities
                 </h3>
@@ -63,22 +63,22 @@
                 </ul>
             </div>
         </section>
-        <section class="places">
+        <section class="places" role="contentinfo"> 
             <h1>Places</h1>
             <article>
                 <h2>My Home</h2>
                 <div class="price_by_night">
-                    $80
+                    <h3>$80</h3>
                 </div>
-                <div class="information">
-                    <div class="max_guest">
-                        2 Guests
+                <div class="information" role="list">
+                    <div class="max_guest" title="Number of Guests">
+                        <h3>2 Guests</h3>
                     </div>
-                    <div class="number_rooms">
-                        1 Bedroom
+                    <div class="number_rooms" title="Number of Rooms">
+                        <h3>1 Bedroom</h3>
                     </div>
-                    <div class="number_bathrooms">
-                        1 Bathroom
+                    <div class="number_bathrooms" title="Number of Bathrooms">
+                        <h3>1 Bathroom</h3>
                     </div>
                 </div>
                 <div class="user">
@@ -92,7 +92,7 @@
                     </p>
                 </div>
 
-                <div class="amenities">
+                <div class="amenities" role="list">
                     <h2>Amenities</h2>
                     <ul>
                         <li class="tv">TV</li>
@@ -117,17 +117,17 @@
             <article>
                 <h2>Tiny House</h2>
                 <div class="price_by_night">
-                    $65
+                    <h3>$65</h3>
                 </div>
-                <div class="information">
-                    <div class="max_guest">
-                        4 Guests
+                <div class="information" role="list">
+                    <div class="max_guest" title="Number of Guests">
+                        <h3>4 Guests</h3>
                     </div>
-                    <div class="number_rooms">
-                        2 Bedroom
+                    <div class="number_rooms" title="Number of Rooms">
+                        <h3>2 Bedroom</h3>
                     </div>
-                    <div class="number_bathrooms">
-                        1 Bathroom
+                    <div class="number_bathrooms" title="Number of Bathrooms">
+                        <h3>1 Bathroom</h3>
                     </div>
                 </div>
                 <div class="user">
@@ -145,7 +145,7 @@
                         porch/deck to relax on and have a glass of Merlot.
                     </p>
                 </div>
-                <div class="amenities">
+                <div class="amenities" role="list">
                     <h2>Amenities</h2>
                     <ul>
                         <li class="pets">Pet Friendly</li>
@@ -172,17 +172,17 @@
             <article>
                 <h2>A suite</h2>
                 <div class="price_by_night">
-                    $190
+                    <h3>$190</h3>
                 </div>
                 <div class="information">
-                    <div class="max_guest">
-                        4 Guests
+                    <div class="max_guest" title="Number of Guests">
+                        <h3>4 Guests</h3>
                     </div>
-                    <div class="number_rooms">
-                        4 Bedroom
+                    <div class="number_rooms" title="Number of Rooms">
+                        <h3>4 Bedroom</h3>
                     </div>
-                    <div class="number_bathrooms">
-                        3 Bathroom
+                    <div class="number_bathrooms" title="Number of Bathrooms">
+                        <h3>3 Bathroom</h3>
                     </div>
                 </div>
                 <div class="user">
@@ -198,7 +198,7 @@
                         feel luxury from top to bottom.
                     </p>
                 </div>
-                <div class="amenities">
+                <div class="amenities" role="list">
                     <h2>Amenities</h2>
                     <ul>
                         <li class="tv">TV</li>

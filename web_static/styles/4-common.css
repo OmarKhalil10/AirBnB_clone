@@ -1,15 +1,18 @@
-/* Body stylesheet */
+html, body {
+    height: 100%;
+}
 body {
     margin: 0px;
-    padding: 0px;
+    padding: 0px; 
     color: #484848;
     font-size: 14px;
-    font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Circular, "Helvetica Neue",Helvetica,Arial,sans-serif;
+    display: flex;
+    flex-direction: column;
 }
-/* Container style */
 .container {
     max-width: 1000px;
-    margin: 30px auto 30px auto;
+    margin: 30px auto;
     width: 100%;
-    padding-bottom: 20px;
+    flex: 1 0 auto;
 }
